@@ -59,22 +59,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.71"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+        app:layout_constraintTop_toBottomOf="@+id/tilEntersecondnumber" />
 
     <Button
         android:id="@+id/btnDivide"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="405dp"
+        android:layout_marginTop="408dp"
         android:layout_marginEnd="8dp"
         android:text="/"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.266"
         app:layout_constraintStart_toEndOf="@+id/btnModulus"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
+        android:id="@+id/tilEnternunber"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -92,7 +93,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout2"
+        android:id="@+id/tilEntersecondnumber"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -100,7 +101,7 @@
         android:layout_marginEnd="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+        app:layout_constraintTop_toBottomOf="@+id/tilEnternunber">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etEntersecondnumber"
