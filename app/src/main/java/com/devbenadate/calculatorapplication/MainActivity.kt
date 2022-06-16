@@ -8,8 +8,10 @@ import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 
 class MainActivity : AppCompatActivity() {
-    lateinit var etEnternumber:TextInputLayout
-    lateinit var etEntersecondnumber:TextInputLayout
+    lateinit var tilEnternumber:TextInputLayout
+    lateinit var etEnternumber:TextInputEditText
+    lateinit var tilEntersecondnumber:TextInputLayout
+    lateinit var etEntersecondnumber:TextInputEditText
     lateinit var btnAdd:Button
     lateinit var btnSubtract:Button
     lateinit var btnModulus:Button
@@ -29,24 +31,24 @@ class MainActivity : AppCompatActivity() {
 
         btnAdd.setOnClickListener {
             tvOutput . text = ""
-            var number=etEnternumber.editText.toString() .toInt()
-            var numb =etEntersecondnumber.editText.toString() .toInt()
+            var number=etEnternumber.text.toString() .toInt()
+            var numb =etEntersecondnumber.text.toString() .toInt()
             getResult(number,numb)
         }
 
         btnSubtract.setOnClickListener {
-            var number=etEnternumber.editText.toString() .toInt()
-            var numb=etEntersecondnumber.editText.toString() .toInt()
+            var number=etEnternumber.text.toString() .toInt()
+            var numb=etEntersecondnumber.text.toString() .toInt()
             getResult2(number,numb)
         }
         btnModulus.setOnClickListener {
-            var number=etEnternumber.editText.toString() .toInt()
-            var numb=etEntersecondnumber.editText.toString() .toInt()
+            var number=etEnternumber.text.toString() .toInt()
+            var numb=etEntersecondnumber.text.toString() .toInt()
             getResult3(number,numb)
         }
         btnDivide.setOnClickListener {
-            var number=etEnternumber.editText.toString() .toInt()
-            var numb=etEntersecondnumber.editText.toString() .toInt()
+            var number=etEnternumber.text.toString() .toInt()
+            var numb=etEntersecondnumber.text.toString() .toInt()
             getResult4(number,numb)
         }
 
